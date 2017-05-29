@@ -1,0 +1,1413 @@
+fileFormatVersion: 2
+guid: 5cc554a5fa74e40149cff43053513586
+timeCreated: 1490229887
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Cube
+    100004: Head
+    100006: Head_end
+    100008: Hips
+    100010: L_Calf
+    100012: L_ElbowIK
+    100014: L_ElbowIK_end
+    100016: L_Foot1
+    100018: L_Foot2
+    100020: L_Foot2_end
+    100022: L_FootIK
+    100024: L_FootIK_end
+    100026: L_Hand
+    100028: L_Hand_end
+    100030: L_HandIK
+    100032: L_HandIK_end
+    100034: L_Heel
+    100036: L_Heel_end
+    100038: L_KneeIK
+    100040: L_KneeIK_end
+    100042: L_LowerArm
+    100044: L_Shoulder
+    100046: L_Thigh
+    100048: L_UpperArm
+    100050: L_Wrist
+    100052: Lower_Torso
+    100054: Neck
+    100056: R_Calf
+    100058: R_ElbowIK
+    100060: R_ElbowIK_end
+    100062: R_Foot1
+    100064: R_Foot2
+    100066: R_Foot2_end
+    100068: R_FootIK
+    100070: R_FootIK_end
+    100072: R_Hand
+    100074: R_Hand_end
+    100076: R_HandIK
+    100078: R_HandIK_end
+    100080: R_Heel
+    100082: R_Heel_end
+    100084: R_KneeIK
+    100086: R_KneeIK_end
+    100088: R_LowerArm
+    100090: R_Shoulder
+    100092: R_Thigh
+    100094: R_UpperArm
+    100096: R_Wrist
+    100098: Root
+    100100: //RootNode
+    100102: Upper_Torso
+    400000: Armature
+    400002: Cube
+    400004: Head
+    400006: Head_end
+    400008: Hips
+    400010: L_Calf
+    400012: L_ElbowIK
+    400014: L_ElbowIK_end
+    400016: L_Foot1
+    400018: L_Foot2
+    400020: L_Foot2_end
+    400022: L_FootIK
+    400024: L_FootIK_end
+    400026: L_Hand
+    400028: L_Hand_end
+    400030: L_HandIK
+    400032: L_HandIK_end
+    400034: L_Heel
+    400036: L_Heel_end
+    400038: L_KneeIK
+    400040: L_KneeIK_end
+    400042: L_LowerArm
+    400044: L_Shoulder
+    400046: L_Thigh
+    400048: L_UpperArm
+    400050: L_Wrist
+    400052: Lower_Torso
+    400054: Neck
+    400056: R_Calf
+    400058: R_ElbowIK
+    400060: R_ElbowIK_end
+    400062: R_Foot1
+    400064: R_Foot2
+    400066: R_Foot2_end
+    400068: R_FootIK
+    400070: R_FootIK_end
+    400072: R_Hand
+    400074: R_Hand_end
+    400076: R_HandIK
+    400078: R_HandIK_end
+    400080: R_Heel
+    400082: R_Heel_end
+    400084: R_KneeIK
+    400086: R_KneeIK_end
+    400088: R_LowerArm
+    400090: R_Shoulder
+    400092: R_Thigh
+    400094: R_UpperArm
+    400096: R_Wrist
+    400098: Root
+    400100: //RootNode
+    400102: Upper_Torso
+    4300000: Cube
+    7400000: Armature|ArmatureAction
+    7400002: Idle_Sword
+    7400004: Sheath_Sword
+    7400006: L_Hold_Sword
+    7400008: L_Stab_Sword
+    7400010: L_Block_Sword
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Armature|ArmatureAction' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation DOF
+      on avatar to improve retargeting quality.\n\t'Lower_Torso' has translation animation
+      that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Hips
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2/L_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel/L_Heel_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand/L_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head/Head_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand/R_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2/R_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel/R_Heel_end
+        weight: 0
+      - path: Armature/Root/L_ElbowIK
+        weight: 0
+      - path: Armature/Root/L_ElbowIK/L_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/L_FootIK
+        weight: 0
+      - path: Armature/Root/L_FootIK/L_FootIK_end
+        weight: 0
+      - path: Armature/Root/L_HandIK
+        weight: 0
+      - path: Armature/Root/L_HandIK/L_HandIK_end
+        weight: 0
+      - path: Armature/Root/L_KneeIK
+        weight: 0
+      - path: Armature/Root/L_KneeIK/L_KneeIK_end
+        weight: 0
+      - path: Armature/Root/R_ElbowIK
+        weight: 0
+      - path: Armature/Root/R_ElbowIK/R_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/R_FootIK
+        weight: 0
+      - path: Armature/Root/R_FootIK/R_FootIK_end
+        weight: 0
+      - path: Armature/Root/R_HandIK
+        weight: 0
+      - path: Armature/Root/R_HandIK/R_HandIK_end
+        weight: 0
+      - path: Armature/Root/R_KneeIK
+        weight: 0
+      - path: Armature/Root/R_KneeIK/R_KneeIK_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle_Sword
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Hips
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2/L_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel/L_Heel_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand/L_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head/Head_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand/R_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2/R_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel/R_Heel_end
+        weight: 0
+      - path: Armature/Root/L_ElbowIK
+        weight: 0
+      - path: Armature/Root/L_ElbowIK/L_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/L_FootIK
+        weight: 0
+      - path: Armature/Root/L_FootIK/L_FootIK_end
+        weight: 0
+      - path: Armature/Root/L_HandIK
+        weight: 0
+      - path: Armature/Root/L_HandIK/L_HandIK_end
+        weight: 0
+      - path: Armature/Root/L_KneeIK
+        weight: 0
+      - path: Armature/Root/L_KneeIK/L_KneeIK_end
+        weight: 0
+      - path: Armature/Root/R_ElbowIK
+        weight: 0
+      - path: Armature/Root/R_ElbowIK/R_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/R_FootIK
+        weight: 0
+      - path: Armature/Root/R_FootIK/R_FootIK_end
+        weight: 0
+      - path: Armature/Root/R_HandIK
+        weight: 0
+      - path: Armature/Root/R_HandIK/R_HandIK_end
+        weight: 0
+      - path: Armature/Root/R_KneeIK
+        weight: 0
+      - path: Armature/Root/R_KneeIK/R_KneeIK_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sheath_Sword
+      takeName: Armature|ArmatureAction
+      firstFrame: 36
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Hips
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2/L_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel/L_Heel_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand/L_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head/Head_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand/R_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2/R_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel/R_Heel_end
+        weight: 0
+      - path: Armature/Root/L_ElbowIK
+        weight: 0
+      - path: Armature/Root/L_ElbowIK/L_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/L_FootIK
+        weight: 0
+      - path: Armature/Root/L_FootIK/L_FootIK_end
+        weight: 0
+      - path: Armature/Root/L_HandIK
+        weight: 0
+      - path: Armature/Root/L_HandIK/L_HandIK_end
+        weight: 0
+      - path: Armature/Root/L_KneeIK
+        weight: 0
+      - path: Armature/Root/L_KneeIK/L_KneeIK_end
+        weight: 0
+      - path: Armature/Root/R_ElbowIK
+        weight: 0
+      - path: Armature/Root/R_ElbowIK/R_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/R_FootIK
+        weight: 0
+      - path: Armature/Root/R_FootIK/R_FootIK_end
+        weight: 0
+      - path: Armature/Root/R_HandIK
+        weight: 0
+      - path: Armature/Root/R_HandIK/R_HandIK_end
+        weight: 0
+      - path: Armature/Root/R_KneeIK
+        weight: 0
+      - path: Armature/Root/R_KneeIK/R_KneeIK_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: L_Hold_Sword
+      takeName: Armature|ArmatureAction
+      firstFrame: 43
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Hips
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2/L_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel/L_Heel_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand/L_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head/Head_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand/R_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2/R_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel/R_Heel_end
+        weight: 0
+      - path: Armature/Root/L_ElbowIK
+        weight: 0
+      - path: Armature/Root/L_ElbowIK/L_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/L_FootIK
+        weight: 0
+      - path: Armature/Root/L_FootIK/L_FootIK_end
+        weight: 0
+      - path: Armature/Root/L_HandIK
+        weight: 0
+      - path: Armature/Root/L_HandIK/L_HandIK_end
+        weight: 0
+      - path: Armature/Root/L_KneeIK
+        weight: 0
+      - path: Armature/Root/L_KneeIK/L_KneeIK_end
+        weight: 0
+      - path: Armature/Root/R_ElbowIK
+        weight: 0
+      - path: Armature/Root/R_ElbowIK/R_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/R_FootIK
+        weight: 0
+      - path: Armature/Root/R_FootIK/R_FootIK_end
+        weight: 0
+      - path: Armature/Root/R_HandIK
+        weight: 0
+      - path: Armature/Root/R_HandIK/R_HandIK_end
+        weight: 0
+      - path: Armature/Root/R_KneeIK
+        weight: 0
+      - path: Armature/Root/R_KneeIK/R_KneeIK_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: L_Stab_Sword
+      takeName: Armature|ArmatureAction
+      firstFrame: 49
+      lastFrame: 57
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Hips
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2/L_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel/L_Heel_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand/L_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head/Head_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand/R_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2/R_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel/R_Heel_end
+        weight: 0
+      - path: Armature/Root/L_ElbowIK
+        weight: 0
+      - path: Armature/Root/L_ElbowIK/L_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/L_FootIK
+        weight: 0
+      - path: Armature/Root/L_FootIK/L_FootIK_end
+        weight: 0
+      - path: Armature/Root/L_HandIK
+        weight: 0
+      - path: Armature/Root/L_HandIK/L_HandIK_end
+        weight: 0
+      - path: Armature/Root/L_KneeIK
+        weight: 0
+      - path: Armature/Root/L_KneeIK/L_KneeIK_end
+        weight: 0
+      - path: Armature/Root/R_ElbowIK
+        weight: 0
+      - path: Armature/Root/R_ElbowIK/R_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/R_FootIK
+        weight: 0
+      - path: Armature/Root/R_FootIK/R_FootIK_end
+        weight: 0
+      - path: Armature/Root/R_HandIK
+        weight: 0
+      - path: Armature/Root/R_HandIK/R_HandIK_end
+        weight: 0
+      - path: Armature/Root/R_KneeIK
+        weight: 0
+      - path: Armature/Root/R_KneeIK/R_KneeIK_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: L_Block_Sword
+      takeName: Armature|ArmatureAction
+      firstFrame: 59
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Hips
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Foot1/L_Foot2/L_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel
+        weight: 0
+      - path: Armature/Root/Hips/L_Thigh/L_Calf/L_Heel/L_Heel_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/L_Shoulder/L_UpperArm/L_LowerArm/L_Wrist/L_Hand/L_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/Neck/Head/Head_end
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist
+        weight: 1
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand
+        weight: 0
+      - path: Armature/Root/Hips/Lower_Torso/Upper_Torso/R_Shoulder/R_UpperArm/R_LowerArm/R_Wrist/R_Hand/R_Hand_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2
+        weight: 1
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Foot1/R_Foot2/R_Foot2_end
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel
+        weight: 0
+      - path: Armature/Root/Hips/R_Thigh/R_Calf/R_Heel/R_Heel_end
+        weight: 0
+      - path: Armature/Root/L_ElbowIK
+        weight: 0
+      - path: Armature/Root/L_ElbowIK/L_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/L_FootIK
+        weight: 0
+      - path: Armature/Root/L_FootIK/L_FootIK_end
+        weight: 0
+      - path: Armature/Root/L_HandIK
+        weight: 0
+      - path: Armature/Root/L_HandIK/L_HandIK_end
+        weight: 0
+      - path: Armature/Root/L_KneeIK
+        weight: 0
+      - path: Armature/Root/L_KneeIK/L_KneeIK_end
+        weight: 0
+      - path: Armature/Root/R_ElbowIK
+        weight: 0
+      - path: Armature/Root/R_ElbowIK/R_ElbowIK_end
+        weight: 0
+      - path: Armature/Root/R_FootIK
+        weight: 0
+      - path: Armature/Root/R_FootIK/R_FootIK_end
+        weight: 0
+      - path: Armature/Root/R_HandIK
+        weight: 0
+      - path: Armature/Root/R_HandIK/R_HandIK_end
+        weight: 0
+      - path: Armature/Root/R_KneeIK
+        weight: 0
+      - path: Armature/Root/R_KneeIK/R_KneeIK_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Foot1
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Foot1
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lower_Torso
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Upper_Torso
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Shoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Shoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_LowerArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_LowerArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Wrist
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Wrist
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Foot2
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Foot2
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: swordAnimset(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: swordAnimset(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Root
+      parentName: Armature
+      position: {x: -0, y: 0.01667549, z: 0}
+      rotation: {x: 1, y: 5.3200612e-12, z: 0.00006289879, w: -0.00008894958}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: Root
+      position: {x: 0.000027345093, y: 0.010140838, z: -0.21736541}
+      rotation: {x: 0.0005313936, y: -0.000063971704, z: 0.0000000384316, w: 0.9999999}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Lower_Torso
+      parentName: Hips
+      position: {x: -0.00000004624658, y: 0.006469286, z: -0.021551762}
+      rotation: {x: -0.6606811, y: 0.00000071591654, z: 0.00000078763094, w: 0.75066674}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Upper_Torso
+      parentName: Lower_Torso
+      position: {x: 6.3948843e-16, y: 0.048466902, z: -0.000000002384186}
+      rotation: {x: -0.1289352, y: 0.00000035981478, z: -0.00000001082378, w: 0.991653}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Neck
+      parentName: Upper_Torso
+      position: {x: 2.6290082e-15, y: 0.07390875, z: -2.9802302e-10}
+      rotation: {x: -0.000000024615286, y: 0.991555, z: 0.1296871, w: 0.00000013107268}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head
+      parentName: Neck
+      position: {x: -3.5527135e-16, y: 0.027944628, z: 0.000000005830079}
+      rotation: {x: 0.000000093197734, y: 0.9975457, z: 0.07001869, w: 0.0000013413985}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: Head_end
+      parentName: Head
+      position: {x: -0, y: 0.051535197, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Shoulder
+      parentName: Upper_Torso
+      position: {x: 2.6290082e-15, y: 0.07390875, z: -2.9802302e-10}
+      rotation: {x: -0.5297277, y: 0.3957636, z: 0.5859788, w: 0.46838945}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+    - name: L_UpperArm
+      parentName: L_Shoulder
+      position: {x: -3.21898e-10, y: 0.04846296, z: -0.000000010829153}
+      rotation: {x: 0.1085931, y: -0.110337466, z: -0.015004452, w: 0.98783004}
+      scale: {x: 1, y: 1, z: 0.99999964}
+    - name: L_LowerArm
+      parentName: L_UpperArm
+      position: {x: -0.000000024735927, y: 0.07108452, z: 0.000000012218952}
+      rotation: {x: 0.02780973, y: -0.6636873, z: 0.010633353, w: 0.7474175}
+      scale: {x: 0.9999997, y: 0.9999997, z: 1}
+    - name: L_Wrist
+      parentName: L_LowerArm
+      position: {x: -0.0000000017881393, y: 0.053256772, z: -5.9604643e-10}
+      rotation: {x: -0.14617795, y: -0.053119734, z: 0.04087266, w: 0.9869852}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: L_Hand
+      parentName: L_Wrist
+      position: {x: -0.000000024437904, y: 0.025292987, z: 0.0000000011920929}
+      rotation: {x: -0.004053227, y: 0.00044641652, z: 0.0359088, w: 0.9993468}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: L_Hand_end
+      parentName: L_Hand
+      position: {x: -0, y: 0.017132685, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Shoulder
+      parentName: Upper_Torso
+      position: {x: 2.6290082e-15, y: 0.07390875, z: -2.9802302e-10}
+      rotation: {x: 0.5191632, y: 0.40871748, z: 0.5770185, w: -0.4800721}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: R_UpperArm
+      parentName: R_Shoulder
+      position: {x: 1.7183033e-10, y: 0.045100432, z: -0.00000003221628}
+      rotation: {x: 0.08859167, y: 0.078119315, z: 0.00864008, w: 0.99296236}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: R_LowerArm
+      parentName: R_UpperArm
+      position: {x: -0.000000018775463, y: 0.073652916, z: 0.000000003427267}
+      rotation: {x: 0.008610493, y: -0.05122994, z: -0.02965262, w: 0.9982095}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: R_Wrist
+      parentName: R_LowerArm
+      position: {x: -0.000000004172325, y: 0.05390895, z: 0.000000008335337}
+      rotation: {x: -0.011139403, y: 0.027027614, z: -0.0076701143, w: 0.9995432}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: R_Hand
+      parentName: R_Wrist
+      position: {x: 0.0000000047683715, y: 0.025013594, z: -0.0000000090897085}
+      rotation: {x: -0.014791652, y: 0.6869744, z: -0.00794619, w: 0.7264876}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: R_Hand_end
+      parentName: R_Hand
+      position: {x: -0, y: 0.017542051, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Thigh
+      parentName: Hips
+      position: {x: -0.020265592, y: -0.0000000024964217, z: 0.00000012919637}
+      rotation: {x: 0.48637336, y: 0.51493406, z: 0.4815092, w: 0.5161712}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: L_Calf
+      parentName: L_Thigh
+      position: {x: -7.8231094e-10, y: 0.10132241, z: -0.0000000027587521}
+      rotation: {x: 0.0023562608, y: -0.0020436929, z: 0.08959265, w: 0.99597365}
+      scale: {x: 0.9999998, y: 1, z: 0.9999999}
+    - name: L_Heel
+      parentName: L_Calf
+      position: {x: 0.000000001899898, y: 0.09237805, z: 7.264316e-10}
+      rotation: {x: -0.13466553, y: 0.9906463, z: -0.021316433, w: -0.0055426587}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: L_Heel_end
+      parentName: L_Heel
+      position: {x: -0, y: 0.022746023, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Foot1
+      parentName: L_Calf
+      position: {x: 0.000000001899898, y: 0.09237805, z: 7.264316e-10}
+      rotation: {x: 0.3107797, y: 0.6319515, z: -0.31829613, w: 0.63461864}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Foot2
+      parentName: L_Foot1
+      position: {x: 9.627547e-10, y: 0.028997006, z: -6.705522e-10}
+      rotation: {x: 0.33510903, y: 0.00000019681504, z: -0.000000021599767, w: 0.9421794}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Foot2_end
+      parentName: L_Foot2
+      position: {x: -0, y: 0.023461675, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Thigh
+      parentName: Hips
+      position: {x: 0.019387182, y: -0.0000000025513671, z: 0.000000005960819}
+      rotation: {x: 0.47762078, y: 0.52185404, z: 0.47822076, w: 0.52043426}
+      scale: {x: 0.99999994, y: 1.0000005, z: 1}
+    - name: R_Calf
+      parentName: R_Thigh
+      position: {x: -0.0000000014109537, y: 0.101130515, z: 7.3603584e-10}
+      rotation: {x: -0.11333163, y: 0.9935543, z: -0.001988779, w: -0.0013651899}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1}
+    - name: R_Heel
+      parentName: R_Calf
+      position: {x: 0.0000000010523945, y: 0.09303853, z: 0.0000000016205013}
+      rotation: {x: 0.014470731, y: 0.0200101, z: -0.1442622, w: 0.98923135}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: R_Heel_end
+      parentName: R_Heel
+      position: {x: -0, y: 0.022299001, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Foot1
+      parentName: R_Calf
+      position: {x: 0.0000000010523945, y: 0.09303853, z: 0.0000000016205013}
+      rotation: {x: 0.32174757, y: -0.6275155, z: 0.31134254, w: 0.6369997}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: R_Foot2
+      parentName: R_Foot1
+      position: {x: -7.7765433e-10, y: 0.028502533, z: 0.0000000019371509}
+      rotation: {x: 0.32712576, y: 0.003978376, z: 0.011486875, w: 0.94490266}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: R_Foot2_end
+      parentName: R_Foot2
+      position: {x: -0, y: 0.02347752, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_FootIK
+      parentName: Root
+      position: {x: -0.019228086, y: 0.0056239027, z: -0.02449996}
+      rotation: {x: 1, y: 3.7713678e-12, z: 0.00006289879, w: 0.00017763284}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: L_FootIK_end
+      parentName: L_FootIK
+      position: {x: -0, y: 0.04359332, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_FootIK
+      parentName: Root
+      position: {x: 0.019234251, y: 0.005623903, z: -0.024495125}
+      rotation: {x: 1, y: 7.2129793e-12, z: 0.00006289879, w: 0.00017763284}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: R_FootIK_end
+      parentName: R_FootIK
+      position: {x: -0, y: 0.04359332, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_KneeIK
+      parentName: Root
+      position: {x: -0.020250967, y: 0.29386327, z: -0.1162699}
+      rotation: {x: -0.0000000055951275, y: 1, z: -0.000088886365, w: 0.0000628506}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: L_KneeIK_end
+      parentName: L_KneeIK
+      position: {x: -0, y: 0.04441864, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_KneeIK
+      parentName: Root
+      position: {x: 0.02028021, y: 0.29386327, z: -0.116264805}
+      rotation: {x: -0.0000000055951275, y: 1, z: -0.000088886365, w: 0.0000628506}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: R_KneeIK_end
+      parentName: R_KneeIK
+      position: {x: -0, y: 0.04441864, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_ElbowIK
+      parentName: Root
+      position: {x: -0.055278476, y: -0.1448784, z: -0.27758095}
+      rotation: {x: 1, y: 0.0000000055734333, z: 0.000062898784, w: 0.00008881642}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_ElbowIK_end
+      parentName: L_ElbowIK
+      position: {x: -0, y: 0.03633537, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_ElbowIK
+      parentName: Root
+      position: {x: 0.055348314, y: -0.14487839, z: -0.2775671}
+      rotation: {x: 1, y: 0.0000000055980744, z: 0.000062898784, w: 0.00008894958}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_ElbowIK_end
+      parentName: R_ElbowIK
+      position: {x: -0, y: 0.03633537, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_HandIK
+      parentName: Root
+      position: {x: -0.09788007, y: 0.027249657, z: -0.24250872}
+      rotation: {x: 1, y: -1.4984284e-12, z: 0.00006289879, w: 0.00017736653}
+      scale: {x: 1.765996, y: 1.0000001, z: 1}
+    - name: L_HandIK_end
+      parentName: L_HandIK
+      position: {x: -0, y: 0.030114433, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_HandIK
+      parentName: Root
+      position: {x: 0.09038718, y: 0.027250554, z: -0.23737375}
+      rotation: {x: 0.99986273, y: 0.015473601, z: 0.00009413369, w: -0.005924602}
+      scale: {x: 1.7657213, y: 1.001014, z: 1.000025}
+    - name: R_HandIK_end
+      parentName: R_HandIK
+      position: {x: -0, y: 0.030131027, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube
+      parentName: swordAnimset(Clone)
+      position: {x: -0.064437, y: 41.239677, z: 0.6572575}
+      rotation: {x: 0.000024329967, y: 0.7071068, z: 0.7071067, w: -0.000024329973}
+      scale: {x: 100, y: 100, z: 100}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
