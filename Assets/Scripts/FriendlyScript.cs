@@ -27,15 +27,13 @@ public class FriendlyScript : MonoBehaviour {
 		rb = GetComponent<Rigidbody> ();
 		isDead = false;
 	}
-
-
+		
 	void OnTriggerEnter(Collider coll) {
 		if (coll.tag == "Weapon") {
 			friendlyHealth -= 50;
 		}
 	
 	}
-
 
 	void Update() {
 		//Checking for agent to avoid errors when it gets deleted after death

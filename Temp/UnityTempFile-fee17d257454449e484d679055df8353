@@ -85,6 +85,7 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
+'Assets/RagdollScript.cs'
 'Assets/Scripts/BaseManager.cs'
 'Assets/Scripts/CameraScript.cs'
 'Assets/Scripts/CombatScript.cs'
@@ -92,6 +93,7 @@
 'Assets/Scripts/FollowTarget.cs'
 'Assets/Scripts/FreeCameraLook.cs'
 'Assets/Scripts/FriendlyScript.cs'
+'Assets/Scripts/HitBoxScript.cs'
 'Assets/Scripts/MoveScript.cs'
 'Assets/Scripts/Pivot.cs'
 'Assets/Scripts/PlayerDamageInstance.cs'

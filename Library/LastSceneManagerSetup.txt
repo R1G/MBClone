@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Mechanics.unity
+- path: Assets/Scenes/Highland.unity
   isLoaded: 1
   isActive: 1
