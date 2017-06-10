@@ -10,6 +10,7 @@ public class EnemyScript : MonoBehaviour {
 	Animator enemyAnim;
 	Rigidbody rb;
 	NavMeshAgent agent;
+	MoveScript moveScript;
 
 	GameObject player;
 	public GameObject attackOrigin;
@@ -27,17 +28,17 @@ public class EnemyScript : MonoBehaviour {
 		enemyAnim = GetComponent<Animator> ();
 		rb = GetComponent<Rigidbody> ();
 		agent = GetComponent<NavMeshAgent> ();
+		moveScript = GetComponent<MoveScript> ();
 		isDead = false;
 
 	}
-
+		
 	void OnTriggerEnter(Collider coll) {
 		if (coll.gameObject.tag == "Weapon") {
 			EnemyHealth -= 50f;
+		
 		}
-
 	}
-
 
 
 	void Update() {
@@ -60,6 +61,7 @@ public class EnemyScript : MonoBehaviour {
 				} else {
 					hasTarget = false;
 					if (GameObject.FindGameObjectWithTag ("BlueBase") != null) {
+						if (agent.isActiveAndEnabled)
 						agent.SetDestination (GameObject.FindGameObjectWithTag ("BlueBase").transform.position);
 					} else {
 						return;
@@ -74,6 +76,7 @@ public class EnemyScript : MonoBehaviour {
 					if (player.GetComponent<CapsuleCollider> () == null) {
 						hasTarget = false;
 					} else {
+						if (agent.isActiveAndEnabled)
 						agent.SetDestination (player.transform.position);
 
 						enemyAnim.SetFloat ("vertical", 1f);
@@ -98,13 +101,22 @@ public class EnemyScript : MonoBehaviour {
 					}
 
 					if (player.GetComponent<CapsuleCollider> () == null) {
-						CancelInvoke ();
 						hasTarget = false;
 						IsInFightingRange = false;
 						enemyAnim.SetBool ("leftHeld", false);
 					} else {
-						Invoke ("EnemyPrep", 1f);
-						Invoke ("EnemyAttack", .2f);
+							if (RandomChooseAttack() == 0) {
+								Invoke ("EnemyLeftPrep", 1f);
+								Invoke ("EnemyLeftAttack", .2f);
+								StopCoroutine ("EnemyLeftAttack");
+
+							} else {
+								Invoke ("EnemyRightPrep", 1f);
+								Invoke ("EnemyRightAttack", .2f);
+								StopCoroutine ("EnemyRightAttack");
+							return;
+							}
+					
 						enemyAnim.SetFloat ("vertical", 0);
 					}
 
@@ -145,18 +157,35 @@ public class EnemyScript : MonoBehaviour {
 		Destroy (gameObject.GetComponent<CapsuleCollider> ());
 		Destroy (weapon);
 		Destroy (agent);
+
 		Destroy (this);
 
 	}
 
-	void EnemyAttack() {
+	void EnemyLeftAttack() {
 		enemyAnim.SetTrigger ("LeftHit");
 		isAttacking = false;
 	}
 
-	void EnemyPrep() {
+	void EnemyRightAttack() {
+		enemyAnim.SetTrigger ("rightHit");
+		isAttacking = false;
+	}
+
+	void EnemyRightPrep() {
+		enemyAnim.SetBool ("leftHeld", false);
+		enemyAnim.SetBool ("rightHeld", true);
+		isAttacking = true;
+	}
+
+	void EnemyLeftPrep() {
+		enemyAnim.SetBool ("rightHeld", false);
 		enemyAnim.SetBool ("leftHeld", true);
 		isAttacking = true;
+	}
+
+	void EnemyAttackPause() {
+		CancelInvoke ();
 	}
 
 	GameObject DesignateTarget(float searchRange) {
@@ -176,5 +205,9 @@ public class EnemyScript : MonoBehaviour {
 
 	void AssignAttacker(GameObject _attacker) {
 		attacker = _attacker;
+	}
+
+	int RandomChooseAttack() {
+		return Random.Range (0, 2);
 	}
 }
