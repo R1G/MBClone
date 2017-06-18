@@ -29,6 +29,7 @@ public class FriendlyScript : MonoBehaviour {
 	private float followPlayerDistance;
 	private float followPlayerAngle;
 
+	private int positionOffset;
 
 
 	void Start() {
@@ -51,6 +52,7 @@ public class FriendlyScript : MonoBehaviour {
 
 		followPlayerDistance = -1;
 		followPlayerAngle = -1;
+
 	}
 		
 	void OnTriggerEnter(Collider coll) {
@@ -68,13 +70,14 @@ public class FriendlyScript : MonoBehaviour {
 		}
 			
 
-		if (currentCommand.Equals("charge")){
-			friendlyAICharge();
-		} else if (currentCommand.Equals("follow")){
-			friendlyAIFollow();
+		if (currentCommand.Equals ("charge")) {
+			friendlyAICharge ();
+		} else if (currentCommand.Equals ("follow")) {
+			friendlyAIFollow ();
+		} else if (currentCommand.Equals ("vFormation")) {
+			friendlyAIVFormation ();
 		}
 			
-
 
 		if (isAttacking) {
 			weapon.tag = "Weapon";
@@ -189,48 +192,7 @@ public class FriendlyScript : MonoBehaviour {
 				}
 			} else {
 
-
-				if (!IsInFightingRange) {
-					if (target.GetComponent<CapsuleCollider> () == null) {
-						hasTarget = false;
-					} else {
-
-						if (agent.isActiveAndEnabled)
-							agent.SetDestination (target.transform.position);
-
-						friendlyAnim.SetFloat ("vertical", 1f);
-					}
-					if (Vector3.Distance (gameObject.transform.position, target.transform.position) <= agent.stoppingDistance) {
-						IsInFightingRange = true;
-						friendlyAnim.SetFloat ("vertical", 0);
-					} else {
-						IsInFightingRange = false;
-						friendlyAnim.SetFloat ("vertical", 1f);
-					}
-				} else {
-
-					//if enemy is close enough to fight
-					//checks if enemy is close enough to fight
-					if (Vector3.Distance (gameObject.transform.position, target.transform.position) <= agent.stoppingDistance) {
-						IsInFightingRange = true;
-						friendlyAnim.SetFloat ("vertical", 0);
-					} else {
-						IsInFightingRange = false;
-						friendlyAnim.SetFloat ("vertical", 1f);
-					}
-
-					if (target.GetComponent<CapsuleCollider> () == null) {
-						CancelInvoke ();
-						hasTarget = false;
-						IsInFightingRange = false;
-						friendlyAnim.SetBool ("leftHeld", false);
-					} else {
-						Invoke ("FriendlyPrep", 1f);
-						Invoke ("FriendlyAttack", .2f);
-						friendlyAnim.SetFloat ("vertical", 0);
-					}
-
-				}
+				attack ();
 
 
 			}
@@ -263,9 +225,10 @@ public class FriendlyScript : MonoBehaviour {
 
 			}
 
-			//TODO: Attack stuff
+
 			if (!hasTarget) {
-				target = DesignateTarget (5f);
+				//notice that the range is much smaller, so the troops will mostly stick next to you
+				target = DesignateTarget (10f);
 				if (target != null && Vector3.Distance (gameObject.transform.position, player.transform.position) <= followRadius) {
 					hasTarget = true;
 				} else {
@@ -284,6 +247,12 @@ public class FriendlyScript : MonoBehaviour {
 					}
 
 				}
+
+
+			} else {
+
+				attack ();
+
 			}
 
 			 
@@ -293,14 +262,144 @@ public class FriendlyScript : MonoBehaviour {
 	}
 
 
+	private void friendlyAIVFormation() {
+		//This first part is used to determine what position each troop should stand in
+		//Basically what I do here is I create two rays shooting out behind the player, like in a V
+		//Then, I use the positionOffset variable to determine where in the ray the troop should be standing
+		//Even means the right ray, odd is the left ray. I subtract 1 from the right ray so the multiplier for the left and right will be the same
+		//I do this every frame. I know that seems pretty wasteful. I tried making it so we wouldn't have to do that, but I couldn't get it to work, for some reason
+		//The rest of the code should just be the same as your code from earlier
+		//Sorry if the code is a little unclear.
+
+
+		Ray ray;
+		int tempPosOffset = positionOffset;
+		Vector3 direction = player.transform.forward;
+
+
+		//I honestly couldn't figure out how to change the euler angle from what you get with transform.forward, so it would be pointing at an angle behind the player
+		//I tried messing with quaternions, but that was even worse. What I ended up doing here is making a ghost object, and rotating THAT 130 degrees, which I fortunately do know how to do
+		GameObject rotatorTool = new GameObject ();
+		rotatorTool.transform.position = player.transform.position;
+		rotatorTool.transform.forward = player.transform.forward;
+		
+
+		if (!(positionOffset % 2 == 0)) {
+			rotatorTool.transform.Rotate (Vector3.up, 130);
+
+
+
+		} else {
+			rotatorTool.transform.Rotate (Vector3.up, -130);
+			tempPosOffset--;
+		}
+
+		ray = new Ray (player.transform.position, rotatorTool.transform.forward);
+		Destroy (rotatorTool);
+
+
+		Debug.DrawRay (player.transform.position + Vector3.up, rotatorTool.transform.forward, Color.cyan);
+		//The number here represents how far each troop will be from each other in the formation
+		Vector3 troopPos = ray.GetPoint (1f * tempPosOffset);
+
+
+
+
+
+
+
+		if (!hasTarget) {
+			//notice that the range is much smaller, so the troops will mostly stick next to you
+			target = DesignateTarget (10f);
+			if (target != null && Vector3.Distance (gameObject.transform.position, player.transform.position) <= followRadius) {
+				hasTarget = true;
+			} else {
+				CancelInvoke ();
+				Vector3 targetPos;
+				targetPos = troopPos;
+				//Debug.DrawLine (player.transform.position, targetPos, Color.green);
+				if (gameObject.transform.position != targetPos) {
+					if (agent.isActiveAndEnabled)
+						agent.SetDestination (targetPos);
+				}
+					
+
+			}
+
+
+		} else {
+
+			attack ();
+
+		} 
+
+
+
+
+
+
+
+	}
+
+	private void attack() {
+		if (!IsInFightingRange) {
+			if (target.GetComponent<CapsuleCollider> () == null) {
+				hasTarget = false;
+			} else {
+
+				if (agent.isActiveAndEnabled)
+					agent.SetDestination (target.transform.position);
+
+				friendlyAnim.SetFloat ("vertical", 1f);
+			}
+			if (Vector3.Distance (gameObject.transform.position, target.transform.position) <= agent.stoppingDistance) {
+				IsInFightingRange = true;
+				friendlyAnim.SetFloat ("vertical", 0);
+			} else {
+				IsInFightingRange = false;
+				friendlyAnim.SetFloat ("vertical", 1f);
+			}
+		} else {
+
+			//if enemy is close enough to fight
+			//checks if enemy is close enough to fight
+			if (Vector3.Distance (gameObject.transform.position, target.transform.position) <= agent.stoppingDistance) {
+				IsInFightingRange = true;
+				friendlyAnim.SetFloat ("vertical", 0);
+			} else {
+				IsInFightingRange = false;
+				friendlyAnim.SetFloat ("vertical", 1f);
+			}
+
+			if (target.GetComponent<CapsuleCollider> () == null) {
+				CancelInvoke ();
+				hasTarget = false;
+				IsInFightingRange = false;
+				friendlyAnim.SetBool ("leftHeld", false);
+			} else {
+				Invoke ("FriendlyPrep", 1f);
+				Invoke ("FriendlyAttack", .2f);
+				friendlyAnim.SetFloat ("vertical", 0);
+			}
+
+		}
+	}
+
+
+	public void setPositionOffset(int num){
+		positionOffset = num;
+	}
+
+
 	private Vector3 newRelativeDistancePos(float distance, float angle) {
+		//Thanks Ms. Meiman!
 		float x = distance * Mathf.Cos(angle * Mathf.Deg2Rad);
 		float z = distance * Mathf.Sin(angle * Mathf.Deg2Rad);
 		Vector3 newPosition = player.transform.position;
-		newPosition.x += x;
-		newPosition.z += z;
+		Vector3 addPos = new Vector3(x,0,z);
+		newPosition += addPos;
 		return newPosition;
-	
+		//Bean there done that
 	}
 
 
