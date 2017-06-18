@@ -9,6 +9,8 @@ public class BaseManager : MonoBehaviour {
 	int spawnCount;
 	int spawnLimit = 20;
 
+
+
 	void Start () {
 
 		if (teamName == "BLUE") {

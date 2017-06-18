@@ -61,6 +61,7 @@ public class EnemyScript : MonoBehaviour {
 				} else {
 					hasTarget = false;
 					if (GameObject.FindGameObjectWithTag ("BlueBase") != null) {
+						if (agent.isActiveAndEnabled)
 						agent.SetDestination (GameObject.FindGameObjectWithTag ("BlueBase").transform.position);
 					} else {
 						return;
@@ -75,6 +76,7 @@ public class EnemyScript : MonoBehaviour {
 					if (player.GetComponent<CapsuleCollider> () == null) {
 						hasTarget = false;
 					} else {
+						if (agent.isActiveAndEnabled)
 						agent.SetDestination (player.transform.position);
 
 						enemyAnim.SetFloat ("vertical", 1f);

@@ -14,6 +14,7 @@ public class CombatScript : MonoBehaviour {
 	MoveScript moveScript;
 
 	void Start() {
+		
 		anim = GetComponent<Animator> ();
 		moveScript = GetComponent<MoveScript> ();
 	}
@@ -26,6 +27,14 @@ public class CombatScript : MonoBehaviour {
 	}
 
 	void Update() {
+
+
+
+
+
+
+
+
 
 		if (Input.GetButton ("Fire2")) {
 			anim.SetBool ("rightHeld", true);
