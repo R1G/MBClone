@@ -55,6 +55,8 @@
      <Compile Include="Assets\Scripts\FreeCameraLook.cs" />
      <Compile Include="Assets\Scripts\FriendlyScript.cs" />
      <Compile Include="Assets\Scripts\HitBoxScript.cs" />
+     <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\MoveScript.cs" />
      <Compile Include="Assets\Scripts\Pivot.cs" />
      <Compile Include="Assets\Scripts\PlayerDamageInstance.cs" />

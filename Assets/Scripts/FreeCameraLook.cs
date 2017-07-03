@@ -35,8 +35,8 @@ public class FreeCameraLook : Pivot {
  protected override	void Update ()
 	{
 		base.Update();
-
-		HandleRotationMovement();
+		if (Time.fixedTime != 0)	
+			HandleRotationMovement();
 
 		if (lockCursor && Input.GetMouseButtonUp (0))
 		{
